@@ -33,6 +33,9 @@ To build an embedded edge device capable of monitoring the metrics above—along
 
 * **Microcontroller Board:** ESP32S DevKIT WiFi + BLE Module (30-Pin). Functions as the central processing edge unit, reading sensor data and utilizing its built-in Wi-Fi to send telemetry to the cloud platform.
 * **Temperature & Humidity Sensor:** DHT22 (AM2302). Chosen for its high accuracy and wid measurement ranges ($-40^\circ\text{C}$ to $+80^\circ\text{C}$ temperature, 0-100% RH).
+* **Substrate Moisture Sensor:** Capacitive Soil Moisture Sensor v1.2Role: Evaluates the volumetric water content of the sandy loam soil, tracking whether it remains within the essential 40%-60% field capacity to prevent root rot or wilting. (Chosen over resistive models to avoid metal corrosion in wet soil).
+* **Substrate Chemical Sensor:** Industrial Analog Soil pH Sensor/Probe KitRole: Monitors real-time mineral availability and nutrient absorption by ensuring the soil substrate does not breach the 6.0-7.5pH boundary.
+* **Solar Exposure Sensor:** Light Dependent Resistor (LDR) / GL5516 PhotoresistorRole: Quantifies ambient light levels to confirm the passive greenhouse structure achieves the mandatory 6-8 hours of direct sunlight required for proper photosynthesis.
 * **Gas Leak Sensor:** MQ-5 Gas Sensor. Specifically optimized for detecting LPG, natural gas and coal gas leaks. Essential for monitoring greenhouse heating systems powered by LPG.
 * **Visual Display:** 1.3" White IIC 128x64 OLED LCD Display. Uses the $I^2C$ protocol to display localized real-time data readings directly in the greenhouse for field technicians.
 * **Actuator Driver:** 5V 1-Channel Low-Level Trigger Relay Module. Used to isolate and switch external devices safely using low-voltage ESP32 GPIO pins.
