@@ -67,4 +67,4 @@ Our physical testing confirmed several critical power behavior patterns first id
 ---
 
 ## 6. Evidence of Groupwork
-![Groupwork](.\image.png)
+![Groupwork](image.png)
